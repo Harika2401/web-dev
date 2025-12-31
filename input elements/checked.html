@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/server">
+        <p>Syntax:</p>
+        <input type="checkbox" name="age" id="age">
+        <label for="age"> Are you over 18?</label>
+        <p>Now you can check the checkbox by default by adding the "checked" attribute:</p>
+        <input type="checkbox" name="age" id="age" checked>
+        <label for="age"> Are you over 18?</label>
+       <p>This will render the checkbox as checked when the page loads.</p> 
+        <button type="submit">Submit</button>
+        <p>On submitting the form you can see the site url as "file:///C:/server?age=on"</p>
+        <p> This means that the user's age is >18</p>
+    </form>
+</body>
+
+</html>

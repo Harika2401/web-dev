@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/action">
+        <!--Here action attribute specifies the action the form has to be performed after submitting it-->
+        <h3>Lets create input</h3>
+        <p>Input tag is used to take input from user</p>
+        <p>it is of different types, but the mostly used types are::</p>
+        <ul>
+            <li>Simple input</li>
+            <li>text</li>
+            <li>password</li>
+            <li>number</li>
+            <li>time</li>
+            <li>color</li>
+        </ul>
+        <input/>
+        <p>Here you can type any thing</p>
+        <input type="text"/>
+        <p>Here also you can type any thing</p>
+        <input type="password"/>
+        <input type="number"/>
+        <input type="time"/>
+        <input type="color"/>
+
+        <h3>Placeholders</h3>
+        <p>Placeholders specifies the data that has to be there in the input</p>
+        <p> for example:</p>
+        <p>Username:<input type="text" placeholder="Enter Username"/></p>
+        <p>Passowrd:<input type="password" placeholder="Enter password"/></p>
+
+        <h3>Lables</h3>
+        <p>Previously when you click on username text and password text it did not trigger input field</p>
+        <p>Using lables we can make it happen </p>
+        <p>Example:</p>
+        <label>
+            username:
+            <input type="text" placeholder="Enter Username"/>
+        </label>
+        <label>
+            Password:
+            <input type="password" placeholder="Enter password"/>
+        </label>
+        <img src="lables_syntax.png" style="margin-top: 20px;"/>
+        <h3>Buttons in forms</h3>
+        <p>If you click a button in form then it will redirect to the page which you have specified in the <b>action</b> attribute of form</p>
+        <button>This Submit Button is inside the form</button>
+        <p>There are many types of buttons 3 of then are:</p>
+        <ul>
+            <li>Submit</li>
+            <p>It will submit the info from form to another page</p>
+            <li>button</li>
+            <p>It does'nt perform any action it</p>
+            <li>reset</li>
+            <p>It resets all he entered data in the form</p>
+        </ul>
+        <button type="submit">Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+        <h3>Creating buttons using input</h3>
+        <p>You can create buttons using input element by just defining the type</p>
+        <p>for example:</p>
+        <input type="button" value="Click me"/>
+        <p>Here it  does'nt perform any action</p>
+        <input type="submit"/>
+        <p>Here it will submit the form data</p>
+        <p>but using button elementis preferable</p>
+    </form>
+    <hr>
+    <form action="/action">
+        <h3>Name attribute</h3>
+        <label>
+            username:
+            <input type="text" placeholder="Enter Username" name="username"/>
+        </label>
+        <label>
+            Password:
+            <input type="password" placeholder="Enter password"/>
+        </label>
+        <p>now click on submit button you can see link as  &quot;file:///C:/action?username=sdfdsf&quot;</p>
+        <button type="submit">Submit</button>
+        <p>Here you got username=sdfdsf in link</p>
+        <p>This is because you used name attribute in the username input section</p>
+        <p>and sdfdsf is the username that you have entered</p>
+    </form>
+    <hr>
+    <form action="https://www.youtube.com/results?">
+        <label>
+            Search:<input type="text" placeholder="Search here" name="search_query"/>
+        </label>
+        <button type="submit">Submit</button>
+        <p>Here your attribute name is <b>search_query</b> and the action link of the form is <b>https://www.youtube.com/results?</b></p>
+        <p>this link is youtube's link</p>
+        <p>After clicking on search it will redirect to youtube search and the link in utube will be like this</p>
+        <h4>https://www.youtube.com/results?search_query=apple</h4>
+    </form>
+    <hr>
+    <hr>
+    <hr>
+    <p>buttons outside the form will not redirect you to any page unless you mention it .</p>
+    <button>This submitt button is outside the form</button>
+</body>
+</html>

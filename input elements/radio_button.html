@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+</head>
+
+<body>
+    <form action="/server">
+        <p>In this you can't select all the options , you can only select one option</p>
+        <p>Syntax:</p>
+        <div>
+            <input type="radio" name="fruit" id="apple" />
+            <lable for="apple">Apple</lable>
+            <input type="radio" name="fruit" id="mango" />
+            <lable for="mango">Mango</lable>
+            <input type="radio" name="fruit" id="banana" />
+            <lable for="banana">Banana</lable>
+        </div>
+        <p>Here you can select only one because the name for every radio button is same</p>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p>Url after submitting "file:///C:/server?fruit=on"</p>
+    <hr>
+    <form action="/action">
+        <div>
+            <input type="radio" name="fruit" id="apple" />
+            <lable for="apple">Apple</lable>
+            <input type="radio" name="Vegitable" id="Beans" />
+            <lable for="Beans">Beans</lable>
+            <input type="radio" name="Juice" id="banana" />
+            <lable for="banana">Banana</lable>
+        </div>
+        <p>Here you can select only one because the name for every radio button is same</p>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p>now url will be like "file:///C:/action?fruit=on&Vegitable=on&Juice=on"</p>
+    <hr>
+     <form action="/act">
+        <p>In this you can't select all the options , you can only select one option</p>
+        <p>Syntax:</p>
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple"/>
+            <lable for="apple">Apple</lable>
+            <input type="radio" name="fruit" id="mango" value="mango "/>
+            <lable for="mango">Mango</lable>
+            <input type="radio" name="fruit" id="banana" value="banana"/>
+            <lable for="banana">Banana</lable>
+        </div>
+        <p>Here you can select only one because the name for every radio button is same</p>
+        <button type="submit">Submit</button>
+    </form>
+     <p>now url will be like "file:///C:/act?fruit=mango+"</p>
+</body>
+
+</html>

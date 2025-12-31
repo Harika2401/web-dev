@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range</title>
+</head>
+<body>
+    <form action="/act">
+        <label for="vol">Select the volume range:</label>
+        <input type="range" name="vol" id="vol" min="0" max="100"/>
+        <button type="submit">submit</button>
+    </form>
+    <p>url will be like "file:///C:/act?vol=50"</p>
+    <hr>
+    <form action="/action">
+        <p>If you want the range to be incresed by 10 everytime then do this</p>
+        <p>&lt;input type="range" val="vol" name="vol" min="0" max="100" step="10"&gt;</p>
+        <label for="vol">Select the volume</label>
+        <input type="range" name="vol" id="vol" min="0" max="100" step="10">
+        <button type="submit">Submit</button>
+    </form>
+    <p>url will be same </p>
+</body>
+</html>
